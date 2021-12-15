@@ -5,5 +5,6 @@ Free 3D Character Controller for Unity.
 
 # Features
 - Sprinting
-- Detects when the player is moving
+- Crouching
+- Detects when the player is moving, running, and crouching.
 - Has editable camera limitations

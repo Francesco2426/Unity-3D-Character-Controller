@@ -36,22 +36,12 @@ public class PlayerController : MonoBehaviour
     {
         #region Camera Limitation Calculator
         //Camera limitation variables
-        const float MIN_X = 0.0f;
-        const float MAX_X = 380.0f;
         const float MIN_Y = -60.0f;
         const float MAX_Y = 70.0f;
 
         X += Input.GetAxis("Mouse X") * (Sensitivity * Time.deltaTime);
         Y -= Input.GetAxis("Mouse Y") * (Sensitivity * Time.deltaTime);
 
-        if (X < MIN_X)
-        {
-            X += MAX_X;
-        }
-        else if (X > MAX_X)
-        {
-            X -= MAX_X;
-        }
         if (Y < MIN_Y)
         {
             Y = MIN_Y;

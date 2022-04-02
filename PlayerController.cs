@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
             Y = MAX_Y;
         }
         #endregion
-        transform.rotation = Quaternion.Euler(Y, X, 0.0f);
+        transform.localRotation = Quaternion.Euler(Y, X, 0.0f);
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");

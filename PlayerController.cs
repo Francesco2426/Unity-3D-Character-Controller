@@ -43,13 +43,9 @@ public class PlayerController : MonoBehaviour
         Y -= Input.GetAxis("Mouse Y") * (Sensitivity * Time.deltaTime);
 
         if (Y < MIN_Y)
-        {
             Y = MIN_Y;
-        }
         else if (Y > MAX_Y)
-        {
             Y = MAX_Y;
-        }
         #endregion
         transform.localRotation = Quaternion.Euler(Y, X, 0.0f);
 

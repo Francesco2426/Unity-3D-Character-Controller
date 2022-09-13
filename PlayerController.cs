@@ -78,6 +78,6 @@ public class PlayerController : MonoBehaviour
         }
         // Detects if the player is moving.
         // Useful if you want footstep sounds and or other features in your game.
-        isMoving = cc.velocity.sqrMagnitude > 0.0f ? true : false
+        isMoving = cc.velocity.sqrMagnitude > 0.0f ? true : false;
     }
 }

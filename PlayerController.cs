@@ -7,17 +7,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private float Sensitivity;
     
-    private float speed;
-    [SerializeField] private float walk;
-    [SerializeField] private float run;
-    [SerializeField] private float crouch;
+    [SerializeField] private float speed, walk, run, crouch
 
-    private Vector3 crouchScale;
-    private Vector3 normalScale;
+    private Vector3 crouchScale, normalScale;
 
-    public bool isMoving;
-    public bool isCrouching;
-    public bool isRunning;
+    public bool isMoving, isCrouching, isRunning;
 
     private float X;
     private float Y;

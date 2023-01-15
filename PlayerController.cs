@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isMoving, isCrouching, isRunning;
 
-    private float X;
-    private float Y;
+    private float X, Y;
 
     private void Start()
     {

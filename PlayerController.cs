@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private float Sensitivity;
     
-    [SerializeField] private float speed, walk, run, crouch
+    [SerializeField] private float speed, walk, run, crouch;
 
     private Vector3 crouchScale, normalScale;
 
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         Vector3 forward = transform.forward * vertical;
         Vector3 right = transform.right * horizontal;
 
-        cc.SimpleMove((forward + right) * speed);
+        cc.SimpleMove(Vector3.Normalize(forward + right) * speed);
         // Determines if the speed = run or walk
         if (Input.GetKey(KeyCode.LeftShift))
         {
